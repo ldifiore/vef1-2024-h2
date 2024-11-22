@@ -4,7 +4,7 @@ import { renderIndexPage } from './lib/pages/index-page.js';
 import { renderSubpage } from './lib/pages/sub-page.js';
 
 async function render(root, querystring) {
-  const mainIndexJson = await fetcher('public/data/index.json');
+  const mainIndexJson = await fetcher('/data/index.json');
 
   const params = new URLSearchParams(querystring);
   const type = params.get('type');
@@ -17,7 +17,7 @@ async function render(root, querystring) {
   }
 
   if (content) {
-    const contentJson = await fetcher(`public/data/${type}/${content}.json`);
+    const contentJson = await fetcher(`/data/${type}/${content}.json`);
     return renderContentPage(root, mainIndexJson , contentJson);
   }
 
@@ -27,3 +27,4 @@ async function render(root, querystring) {
 const root = document.querySelector('#app');
 
 render(root, window.location.search);
+
