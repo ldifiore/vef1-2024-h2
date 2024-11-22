@@ -2,7 +2,7 @@ Verkefnið skal vera keyrt með npm run dev
 
 Liam Difiore,
 github notendanafn: Idifiore,
-HÍ notendanafn: iad7@hi.is
+HÍ notendanafn: lad7@hi.is
 
 Ívan Andri Kjartansson,
 github notendanafn: IvanAK05,
