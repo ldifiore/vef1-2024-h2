@@ -17,7 +17,8 @@ async function render(root, querystring) {
   }
 
   if (content) {
-    return renderContentPage(root, mainIndexJson);
+    const contentJson = await fetcher(`public/data/${type}/${content}.json`);
+    return renderContentPage(root, mainIndexJson , contentJson);
   }
 
   renderSubpage(root, mainIndexJson, type);
