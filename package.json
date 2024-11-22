@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "browser-sync start --server --files ./src/ styles.css index.html",
     "build": "vite build",
-    "lint": "stylelint style.css",
+    "lint:js": "eslint './src/*.js'",
+    "lint:css": "stylelint 'style.css' --fix",
+    "lint": "npm run lint:js && npm run lint:css",
     "preview": "vite preview"
   },
   "devDependencies": {
