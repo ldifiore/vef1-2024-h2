@@ -80,13 +80,7 @@ header{
   background-color: rgb(230, 230, 230);
 }
 
-h1{
 
-}
-
-nav{
-
-}
 
 ul{
   list-style-type: none;
@@ -99,13 +93,7 @@ ul{
   display: inline;
 }
 
-main{
-  
-}
 
-section{
-
-}
 
 .keywords__list{
   display: flex;
@@ -113,9 +101,6 @@ section{
   gap: 1rem;
 }
 
-.keywords__item{
-
-}
 
 .keywords__flashCard{
   width: 600px;
@@ -143,10 +128,87 @@ img{
   width: 70%;
 }
 
-p{
 
+
+@media only screen and (width >= 1px) and (width <= 475px) {
+  * {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  h3{
+    font-size: .75rem;
+  }
+
+  p{
+    font-size: .75rem;
+    padding: 0px;
+  }
+
+  .navigation li{
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    display:block;
+  }
+  
+  .keywords__list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .keywords__flashCard{
+    width: 200px;
+    min-height: 150px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(156, 156, 163);
+    padding: 3rem;
+    border: 2px solid rgb(103, 103, 103);
+    border-radius: 2rem;
+  }
 }
 
-footer{
+@media only screen and (width >= 476px) and (width <= 800px) {
+  * {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+  }
   
+  .keywords__list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .keywords__flashCard{
+    width: 300px;
+    min-height: 150px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(156, 156, 163);
+    padding: 3rem;
+    border: 2px solid rgb(103, 103, 103);
+    border-radius: 2rem;
+  }
 }
